@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Establish Cleanliness</string>
+    <string name="search">Search</string>
+    <string name="favourites">Your Favourites</string>
+    <string name="tv_name">Name</string>
+    <string name="distance">Distance</string>
+    <string name="any">Any</string>
+    <string name="add">Add to favourites</string>
+    <string name="rem">Remove from favourites</string>
+    <string name="tv_rating">Rating</string>
+    <string name="b_sort">Sort</string>
+    <string name="b_filter">Filter</string>
+    <string name="basic_filter">FILTER THE RESULTS</string>
+    <string name="basic_sort">SORT METHOD</string>
+    <string name="buss">Type of business:</string>
+    <string name="region">Region:</string>
+    <string name="loc_auth">Local authority:</string>
+    <string name="s_rating">By rating</string>
+    <string name="s_alpha">Alphabetically</string>
+    <string name="s_alpha_desc">Alphabetically in reverse</string>
+    <string name="f_rating">Minimum rating</string>
+    <string name="f_distance">Maximum distance in miles</string>
+    <string name="s_distance"> By distance</string>
+    <string name="s_relevance">By relevance</string>
+    <string name="d_name">Name of business: </string>
+    <string name="d_address">Address: </string>
+    <string name="d_post">Postcode: </string>
+    <string name="d_date">Date of last inspection: </string>
+    <string name="d_type">Type of business: </string>
+    <string name="prompt_location">The application is about to request access to your location in order to function at its maximum capacity.</string>
+    <string name="no_res">No results found. Try changing some of the filters.</string>
+    <string name="fav_add_ok">You successfully added this establishment in your favourites list.</string>
+    <string name="fav_add_nok">This establishment is already in your favourites list.</string>
+    <string name="fav_rem_ok">You successfully removed this establishment from your favourites list.</string>
+    <string name="fav_rem_nok">This establishment is not in your favourites list.</string>
+    <string name="hint_search">Search for a business</string>
+    <string-array name="regions_array">
+        <item>Any</item>
+        <item>East Counties</item>
+        <item>East Midlands</item>
+        <item>London</item>
+        <item>North East</item>
+        <item>North West</item>
+        <item>South East</item>
+        <item>South West</item>
+        <item>West Midlands</item>
+        <item>Yorkshire</item>
+        <item>Northern Ireland</item>
+        <item>Scotland</item>
+        <item>Wales</item>
+    </string-array>
+    <string-array name="ratings_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

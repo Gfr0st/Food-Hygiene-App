@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SortActivity">
+
+        <TextView
+            android:id="@+id/s_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_sort"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/s_rg"/>
+
+        <RadioGroup
+            android:id="@+id/s_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layoutDirection="rtl"
+            app:layout_constraintTop_toBottomOf="@id/s_textView">
+
+            <RadioButton
+                android:id="@+id/s_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/s_alpha" />
+
+            <RadioButton
+                android:id="@+id/s_rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/s_alpha_desc" />
+
+            <RadioButton
+                android:id="@+id/s_rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/s_rating" />
+
+            <RadioButton
+                android:id="@+id/s_rb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/s_distance" />
+
+            <RadioButton
+                android:id="@+id/s_rb5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/s_relevance" />
+        </RadioGroup>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

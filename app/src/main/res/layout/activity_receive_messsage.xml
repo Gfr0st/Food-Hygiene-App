@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReceiveMesssageActivity">
+
+    <Button
+        android:id="@+id/sorting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:onClick="onSort"
+        android:text="@string/b_sort"
+        app:layout_constraintBottom_toTopOf="@+id/restList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/filter"/>
+
+    <Button
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:onClick="onFilter"
+        android:text="@string/b_filter"
+        app:layout_constraintBottom_toTopOf="@+id/restList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sorting"/>
+
+    <ListView
+        android:id="@+id/restList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/sorting"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintBottom_toTopOf="@+id/restList"
+        app:layout_constraintEnd_toStartOf="@+id/restList"
+        app:layout_constraintStart_toEndOf="@+id/restList"
+        app:layout_constraintTop_toBottomOf="@+id/restList" />
+
+</android.support.constraint.ConstraintLayout>
